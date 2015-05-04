@@ -4,4 +4,4 @@ config.codekit
 node_modules/*
 .DS_Store
 .codekit-cache/*
-*.min.*
+public/js/min/*
