@@ -1,9 +1,20 @@
 #main {
   margin-top: 5em;
 }
+
 .info-panel,
-.card-list{
+.card-list {
   background-color: #F8F8F8;
   border: 1px #E8E8E8 solid;
   padding-left: 1em;
+}
+
+.card {
+  background-color: #FAFAFA;
+  border: 1px #EAEAEA solid;
+}
+
+.card img {
+  width: 200px;
+  margin: auto;  
 }

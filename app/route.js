@@ -23,4 +23,11 @@ router.get('/articles', function(request, response) {
   });
 });
 
+router.get('/articles/:id', function(request, response) {
+  Article.findOne(function(error, article) {
+    if(error) return console.log(error);
+    response.status(200).send(article);
+  });
+});
+
 module.exports = router;

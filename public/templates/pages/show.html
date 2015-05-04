@@ -1,0 +1,9 @@
+<div class="col-xs-12">
+	<div class="card">
+      <img ng-src='{{article.url}}' alt='{{article.name}}'>
+      <p>{{article.name}}</p>
+      <p class="muted">{{article.price}}</p>
+      <p>tags:</p>
+      <a class="badge" ng-repeat="tag in article.tags" ng-href="#/tags/{{tag}}"> {{ tag }} </a>
+  </div>
+</div>
