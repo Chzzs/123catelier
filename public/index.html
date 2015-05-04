@@ -1,41 +1,39 @@
-<html>
+<html ng-app="123catelier">
   <head>
     <title>123Catelier</title>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/screen.css">
+
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <style>
-    #main {
-      margin-top: 5em;
-    }
-    .info-panel,
-    .card-list{
-      background-color: #F8F8F8;
-      border: 1px #E8E8E8 solid;
-    }
-    </style>
+
+    <script src="js/index.js"></script>
+    <script src="js/controllers.js"></script>
+
   </head>
   <body>
+
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
       </div>
     </nav>
+
     <div class="wrapper" id="main">
       <div class="container-fluid">
         <div class="col-xs-12 col-sm-3">
           <div class="info-panel">
-            <h2>lol</h2>
+            <h2>Contact</h2>
           </div>
         </div>
         <div class="col-xs-12 col-sm-9">
-          <div class="card-list">
-            <h2>hey</h2>
-          </div>
+            <div ng-view></div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
