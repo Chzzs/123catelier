@@ -1,0 +1,66 @@
+[ {
+    "id": 1,
+    "name": "Bague carrée et argent martelé",
+    "url": "images/1.png"
+  },  {
+    "id": 2,
+    "name": "Bague ronde et brillant jaune",
+    "url": "images/2.png"
+  },  {
+    "id": 3,
+    "name": "Bague ronde et Liberty Africa",
+    "url": "images/3.png"
+  }, {
+    "id": 4,
+    "name": "Bague carrée et triangle Liberty Africa",
+    "url": "images/4.png"
+  }, {
+    "id": 5,
+    "name": "Bague ronde rose et bois collé",
+    "url": "images/5.png"
+  }, {
+    "id": 6,
+    "name": "Bague ronde et Liberty avec bouton gris",
+    "url": "images/6.png"
+  }, {
+    "id": 7,
+    "name": "Bague ronde gravé et brillant bleu",
+    "url": "images/7.png"
+  }, {
+    "id": 8,
+    "name": "Bague ronde et broderie fleur bleue",
+    "url": "images/8.png"
+  }, {
+    "id": 9,
+    "name": "Bague ronde et Liberty géométrique",
+    "url": "images/9.png"
+  }, {
+    "id": 10,
+    "name": "Bague carrée et fleur nacre",
+    "url": "images/10.png"
+  }, {
+    "id": 11,
+    "name": "Bague ronde et Liberty avec bouton rouge",
+    "url": "images/11.png"
+  }, {
+    "id": 12,
+    "name": "Bague ronde et Liberty avec émail fleur rose",
+    "url": "images/12.png"
+  }, {
+    "id": 13,
+    "name": "Bague ronde et Liberty avec bouton",
+    "url" : "images/13.png"
+  }, {
+    "id": 14,
+    "name": "Bague ronde et pièce de métal argent",
+    "url": "images/14.png"
+  }, {
+    "id": 15,
+    "name": "Bague ronde et carrée Briard vert",
+    "url": "images/15.png"
+  }, {
+    "id": 16,
+    "name": "Bague ronde et losange nacré vert-jaune",
+    "url": "images/16.png"
+  }
+]
