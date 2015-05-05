@@ -62,5 +62,100 @@
     "id": 16,
     "name": "Bague ronde et losange nacré vert-jaune",
     "url": "images/16.png"
+  }, {
+    "id": 17,
+    "name": "Bracelet en cuir et Liberty avec 3 rangs coulissants",
+    "url": "images/17.png",
+    "price": 14
+  }, {
+    "id": 18,
+    "name": "Bracelet Liberty mauve avec 1 rang et fermoir aimanté",
+    "url": "images/18.png",
+    "price": 12
+  }, {
+    "id": 19 ,
+    "name": "Bracelet Liberty rouge avec 1 rang et fermoir aimanté",
+    "url": "images/19.png",
+    "price": 12
+  }, {
+    "id": 20 ,
+    "name": "Bracelet en cuir avec 3 rangs et fermoir magnétique",
+    "url": "images/20.png",
+    "price": 20
+  }, {
+    "id": 21 ,
+    "name": "Bracelet grosses perles magiques multicolores avec fermoir aimanté",
+    "url": "images/21.png",
+    "price": 22
+  },{
+    "id": 22,
+    "name": "Bracelet en cuir plat vert avec fleur et fermoir magnétique",
+    "url": "images/22.png",
+    "price": 20
+  },{
+    "id": 23 ,
+    "name": "Bracelet en cuir Régalitz rouge et Liberty avec fermoir aimanté",
+    "url": "images/23.png",
+    "price": 20   
+  },  {
+    "id": 24 ,
+    "name": "Bracelet en cuir Régalitz bordeaux et Liberty avec fermoir aimanté",
+    "url": "images/24.png",
+    "price": 20
+  }, {
+    "id": 25 ,
+    "name": "Boucles d'oreilles poussette avec Lapis Lazulis",
+    "url": "images/25.png",
+    "price": 20 
+  },  {
+    "id": 26,
+    "name": "Boucles d'oreilles poussette avec Taguas bleu marine et anneau strié argent",
+    "url": "images/26.png",
+    "price": 22 
+  },  {
+    "id": 27 ,
+    "name": "Dormeuse avec petites perles bleues et chainettes",
+    "url": "images/27.png",
+    "price": 16 
+  }, {
+    "id": 28,
+    "name": "Bracelet avec grosses perles magiques bleues et fermoir aimanté",
+    "url": "images/28.png",
+    "price": 22 
+  }, {
+    "id": 29  ,
+    "name": "Boucles d'oreilles demi-cercle avec perles bleues et chainettes",
+    "url": "images/29.png",
+    "price": 22 
+  }, {
+    "id": 30,
+    "name": "Dormeuse perles bleues avec 3 rangs et brillants",
+    "url": "images/30.png",
+    "price":  18
+  }, {
+    "id": 31 ,
+    "name": "Boucles d'oreilles demi arcade avec filigrane et sequin argent",
+    "url": "images/31.png",
+    "price":  25
+  }, {
+    "id": 32 ,
+    "name": "Boucles d'oreilles bois d'ébène avec perle africaine",
+    "url": "images/32.png",
+    "price": 22
+  }, {
+    "id": 33,
+    "name" : "Dormeuse en argent martelé avec perles Lapis Lazulis et chainette",
+    "url" : "images/33.png",
+    "price ": 25
+  }, {
+    "id": 34,
+    "name": "Boucles d'oreilles grand losange avec perle bleue",
+    "url": "images/34.png",
+    "price": 20
+  }, {
+    "id": 35,
+    "name": "Boucles d'oreilles anneau d'argent et fleur",
+    "url": "images/35.png",
+    "price": 20
   }
 ]
