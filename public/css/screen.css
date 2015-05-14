@@ -35,17 +35,20 @@ body {
 }
 
 #main {
-
   margin-top: 2.5em;
 }
 
-.info-panel,
-.card-list {
-  font-family: "Bitter";
+.info-panel{
   background-color: #F8F8F8;
   border: 1px #E8E8E8 solid;
   padding-left: 1em;
   border-radius: 0.4em;
+}
+.info-panel h2 {
+  font-family: "Bitter";
+}
+.info-panel p {
+  font-family: "Roboto";
 
 }
 
@@ -54,21 +57,21 @@ body {
   background-color: #FAFAFA;
   border: 1px #EAEAEA solid;
   border-radius: 0.4em;
-
+  margin-bottom: 1em;
 }
 
 .article {
   background-color: #FAFAFA;
   border: 1px #EAEAEA solid;
-  display: block;
-  margin-top:75px;
-  min-height: 125px;
   border-radius: 0.4em;
+  overflow: overlay;
 }
 
 .article-image {
+
   width: 200px;
 }
+
 .article-name {
   font-size: xx-large;
   font-family: "Roboto";
@@ -79,7 +82,17 @@ body {
 .article-name:after {
   content:'\201D';
 }
+
+.article-price {
+  font-size: 4em;
+  opacity:0.2;
+}
+.article-price:after {
+  content:'€'
+}
 .card img {
+  display: block;
   width: 200px;
-  margin: auto;
+  height: 200px;
+  margin: 0 auto;
 }
