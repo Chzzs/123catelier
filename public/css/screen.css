@@ -1,20 +1,85 @@
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/roboto-slab/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/bitter/Bitter-Bold.otf");
+}
+
+body {
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	right top,
+  	color-stop(0, #D46071),
+  	color-stop(1, #E77F07)
+  );
+  background-image: -o-linear-gradient(right top, #D46071 0%, #E77F07 100%);
+  background-image: -moz-linear-gradient(right top, #D46071 0%, #E77F07 100%);
+  background-image: -webkit-linear-gradient(right top, #D46071 0%, #E77F07 100%);
+  background-image: -ms-linear-gradient(right top, #D46071 0%, #E77F07 100%);
+  background-image: linear-gradient(to right top, #D46071 0%, #E77F07 100%);
+}
+
+#logo{
+  width:100%;
+  background-color:white;
+}
+
+#logo img {
+  display: block;
+  margin: 0 auto;
+  width: 40em;
+}
+
 #main {
-  margin-top: 5em;
+
+  margin-top: 2.5em;
 }
 
 .info-panel,
 .card-list {
+  font-family: "Bitter";
   background-color: #F8F8F8;
   border: 1px #E8E8E8 solid;
   padding-left: 1em;
+  border-radius: 0.4em;
+
 }
 
 .card {
+  font-family: "Roboto";
   background-color: #FAFAFA;
   border: 1px #EAEAEA solid;
+  border-radius: 0.4em;
+
 }
 
+.article {
+  background-color: #FAFAFA;
+  border: 1px #EAEAEA solid;
+  display: block;
+  margin-top:75px;
+  min-height: 125px;
+  border-radius: 0.4em;
+}
+
+.article-image {
+  width: 200px;
+}
+.article-name {
+  font-size: xx-large;
+  font-family: "Roboto";
+}
+.article-name:before {
+  content:'\201C';
+}
+.article-name:after {
+  content:'\201D';
+}
 .card img {
   width: 200px;
-  margin: auto;  
+  margin: auto;
 }
