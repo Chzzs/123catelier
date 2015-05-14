@@ -1,0 +1,52 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass/css3
+@import compass/typography
+
++font-face("Bitter", font-files("bitter/Bitter-Regular.otf"))
++font-face("Bitter-Bold", font-files("bitter/Bitter-Bold.otf"))
+
++font-face("Roboto", font-files("roboto-slab/RobotoSlab-Regular.ttf"))
+
+$font-size: 16px
+
++establish-baseline($font-size)
+
+p, li
+  font-family: "Roboto"
+  +padding-leader(1, $font-size)
+h1, h2, h3, h4, h5, h6
+  font-family: "Bitter-Bold"
+h1
+  font-size: $font-size * 2.5
+  +adjust-font-size-to($font-size * 2.5)
+  +padding-leader(1, $font-size * 2.5)
+
+h2
+  font-size: $font-size * 2
+  +adjust-font-size-to($font-size * 2)
+  +padding-leader(1, $font-size * 2)
+
+header
+  background: white
+  img
+    width: 40em
+    display: block
+    margin: 0 auto
+nav, main
+  padding: 0 0.5em
+
+nav
+  float: left
+  width: 30%
+
+main
+  +display-flex(flex)
+
+  img
+    width: 10em

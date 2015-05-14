@@ -1,19 +1,10 @@
-<div class="col-xs-12">
-			<div class="article">
-				<div class=" col-xs-4">
+			<article>
 					<img class="article-image img-responsive" ng-src='{{article.url}}' alt='{{article.name}}'>
-				</div>
-				<div class="article-content col-xs-8">
-					<div class="row">
-						<h1 class="article-name col-xs-12">{{article.name}}</h1>
-					</div>
-					<div class="row">
-						<h3 class="article-price col-xs-4">{{article.price}}</h3>
-
-						<div class="article-tags col-xs-8">
+				<div class="article-content">
+						<h1 class="article-name">{{article.name}}</h1>
+						<h3 class="article-price">{{article.price}}</h3>
+						<div class="article-tags">
 							<a class="badge" ng-repeat="tag in article.tags" ng-href="#/tags/{{tag}}"> {{ tag }} </a>
 						</div>
-					</div>
 				</div>
-  	</div>
-</div>
+  	</article>
