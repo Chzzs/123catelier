@@ -62,8 +62,10 @@ html {
   font-size: 100%;
   line-height: 1.5em; }
 
+p, li, label, input {
+  font-family: "Roboto"; }
+
 p {
-  font-family: "Roboto";
   padding-top: 1.5em; }
   p:last-of-type {
     padding-bottom: 1.5em; }
@@ -98,19 +100,53 @@ header {
     display: block;
     margin: 0 auto; }
 
-nav, main {
-  padding: 0 0.5em;
-  margin: 0 0.5em; }
+nav .search {
+  text-align: right;
+  vertical-align: top; }
+nav input[type=text] {
+  vertical-align: top;
+  display: inline-block;
+  background: rgba(250, 250, 250, 0.33);
+  border-radius: 0.25em;
+  color: white;
+  height: 2em;
+  border: none; }
+nav input[type=text] {
+  text-indent: 1em; }
+  nav input[type=text]:-moz-placeholder {
+    text-indent: 1em;
+    color: rgba(255, 255, 255, 0.5); }
+  nav input[type=text]::-moz-placeholder {
+    text-indent: 1em;
+    color: rgba(255, 255, 255, 0.5); }
+  nav input[type=text]:-ms-input-placeholder {
+    text-indent: 1em;
+    color: rgba(255, 255, 255, 0.5); }
+  nav input[type=text]::-webkit-input-placeholder {
+    text-indent: 1em;
+    color: rgba(255, 255, 255, 0.5); }
+  nav input[type=text]:focus {
+    outline: none; }
+nav input[type=submit] {
+  outline: none;
+  display: none; }
 
-nav {
-  margin-top: 1em;
-  float: left;
-  width: 30%;
+nav, aside {
+  padding: 0 0.5em;
+  margin: 1em 0 0 0.5em; }
+
+aside {
   border-radius: 0.25em;
   background: #FAFAFA;
   border: 1px solid #F8F8F8; }
 
+aside {
+  float: left;
+  width: 30%; }
+
 main {
+  padding: 0 0 0 0;
+  margin: 0 0.5em 0 0;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -120,7 +156,7 @@ main {
     flex: 0 0 33.333%; }
     main article .card {
       margin: 1em 0 0 1em;
-      padding: -1em 0 0 -1em;
+      padding: 1em 0 0 -1em;
       display: block;
       border-radius: 0.25em;
       background: #FAFAFA;

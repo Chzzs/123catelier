@@ -17,8 +17,9 @@ $font-size: 16px
 
 +establish-baseline($font-size)
 
-p
+p, li, label, input
   font-family: "Roboto"
+p
   +padding-leader(1, $font-size)
   &:last-of-type
     +padding-trailer(1, $font-size)
@@ -43,17 +44,42 @@ header
     width: 40em
     display: block
     margin: 0 auto
-nav, main
-  padding: 0 0.5em
-  margin: 0 0.5em
 nav
-  margin-top: 1em
-  float: left
-  width: 30%
+  .search
+    text-align: right
+    vertical-align: top
+  input[type=text]
+    vertical-align: top
+    display: inline-block
+    background: rgba(#FAFAFA, 0.33)
+    border-radius: 0.25em
+    color: white
+    height: 2em
+    border: none
+  input[type=text]
+    text-indent: 1em
+    +input-placeholder
+      text-indent: 1em
+      color: rgba(#FFF, 0.5)
+    &:focus
+      outline: none
+  input[type=submit]
+    outline: none
+    display: none
+
+nav, aside
+  padding: 0 0.5em
+  margin: 1em 0 0 0.5em
+aside
   border-radius: 0.25em
   background: #FAFAFA
   border: 1px solid #F8F8F8
+aside
+  float: left
+  width: 30%
 main
+  padding: 0 0 0 0
+  margin: 0 0.5em 0 0
   +display-flex(flex)
   +flex-wrap(wrap)
 
@@ -61,7 +87,7 @@ main
     +flex(0 0 33.333%)
     .card
       margin: 1em 0 0 1em
-      padding:  -1em 0 0 -1em
+      padding:  1em 0 0 -1em
       display: block
       border-radius: 0.25em
       background: #FAFAFA

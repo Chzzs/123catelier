@@ -23,20 +23,22 @@
       </a>
     </header>
 
-    <nav class="info-panel">
-      <h2>Nav</h2>
-      <ul>
-        <li><a href="#/articles">Accueil</a></li>
-        <li><a href="#">Recherche</a></li>
-      </ul>
+    <nav>
+      <form class="search" action="#">
+        <input type="text" name="search" placeholder="Que recherchez-vous ?">
+        <input type="submit">
+      </form>
+    </nav>
+
+    <aside>
       <h2>Contact</h2>
       <p>Catherine Pérez-Sohier, porteuse de projet dans le cadre d'une coopérative d'activités et d'emploi, SCOP 276, coopérative engagée dans l'économie sociale et solidaire.</p>
       <p>1, 2, 3... Catelier est mon atelier de création originale de bijoux. Mon atelier se situe à Bois-Guillaume.</p>
       <p>Je réalise toutes les pièces: montage, assemblage, à partir d'éléments et matière première divers (bois, perles du monde, plumes, verre, céramique, etc...). </p>
       <p>Je propose une assez large gamme de produits afin de satisfaire divers budgets et préférences.</p>
-    </nav>
+    </aside>
 
-    <main class="wrapper" id="main" ng-view>
+    <main ng-view>
     </main>
 
     <footer></footer>
