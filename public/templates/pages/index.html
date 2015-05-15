@@ -1,5 +1,5 @@
-<div class="card-list">
-  <article ng-repeat="article in articles">
-    <cat-card name="article.name" id="article.id" url="article.url"></cat-card>
-  </div>
-</div>
+<article  ng-repeat="article in articles">
+  <a class="card" ng-href='#/articles/{{article.id}}'>
+  	<img ng-src='{{article.url}}' alt='{{article.name}}'>
+  </a>
+</article>

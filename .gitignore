@@ -5,3 +5,4 @@ node_modules/*
 .DS_Store
 .codekit-cache/*
 public/js/min/*
+public/config.rb

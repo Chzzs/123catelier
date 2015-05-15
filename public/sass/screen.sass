@@ -17,9 +17,12 @@ $font-size: 16px
 
 +establish-baseline($font-size)
 
-p, li
+p
   font-family: "Roboto"
   +padding-leader(1, $font-size)
+  &:last-of-type
+    +padding-trailer(1, $font-size)
+
 h1, h2, h3, h4, h5, h6
   font-family: "Bitter-Bold"
 h1
@@ -32,6 +35,8 @@ h2
   +adjust-font-size-to($font-size * 2)
   +padding-leader(1, $font-size * 2)
 
+body
+  +background-image(linear-gradient( to top right, #D46071 0%, #E77F07 100%))
 header
   background: white
   img
@@ -40,13 +45,28 @@ header
     margin: 0 auto
 nav, main
   padding: 0 0.5em
-
+  margin: 0 0.5em
 nav
+  margin-top: 1em
   float: left
   width: 30%
-
+  border-radius: 0.25em
+  background: #FAFAFA
+  border: 1px solid #F8F8F8
 main
   +display-flex(flex)
+  +flex-wrap(wrap)
 
-  img
-    width: 10em
+  article
+    +flex(0 0 33.333%)
+    .card
+      margin: 1em 0 0 1em
+      padding:  -1em 0 0 -1em
+      display: block
+      border-radius: 0.25em
+      background: #FAFAFA
+      border: 1px solid #F8F8F8
+    img
+      display: block
+      margin: 0 auto
+      width: 10em
