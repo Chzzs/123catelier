@@ -8,10 +8,21 @@
 @import compass/css3
 @import compass/typography
 
+/* Mixins */
+
+=panel( $background: #FAFAFA, $border: #F8F8F8, $radius : 0.25em)
+  background: $background
+  border: 1px solid $border
+  +border-radius($radius)
+
+
+/* Font Faces */
+
 +font-face("Bitter", font-files("bitter/Bitter-Regular.otf"))
 +font-face("Bitter-Bold", font-files("bitter/Bitter-Bold.otf"))
-
 +font-face("Roboto", font-files("roboto-slab/RobotoSlab-Regular.ttf"))
+
+/* Fonts */
 
 $font-size: 16px
 
@@ -36,26 +47,52 @@ h2
   +adjust-font-size-to($font-size * 2)
   +padding-leader(1, $font-size * 2)
 
+/*  Page Flex Layout */
+
+body
+  +display-flex(flex)
+  +flex-wrap(wrap)
+
+header, nav, footer
+  +flex(0 0 100%)
+
+aside
+  +flex(0 0 33%)
+
+main
+  +flex(1)
+
+/* Body Style */
+
 body
   +background-image(linear-gradient( to top right, #D46071 0%, #E77F07 100%))
+
+/* Header Style */
+
 header
   background: white
   img
     width: 40em
     display: block
     margin: 0 auto
+
+
+/* Nav Layout */
+
+nav
+  margin: 1em 0 0 0
+  padding: 0 0.5em 0 0.5em
+
+/* Nav Style */
+
 nav
   .search
     text-align: right
-    vertical-align: top
   input[type=text]
-    vertical-align: top
-    display: inline-block
-    background: rgba(#FAFAFA, 0.33)
-    border-radius: 0.25em
+    +panel(rgba(#FAFAFA, 0.33), none)
+    border: none
     color: white
     height: 2em
-    border: none
   input[type=text]
     text-indent: 1em
     +input-placeholder
@@ -67,32 +104,39 @@ nav
     outline: none
     display: none
 
-nav, aside
-  padding: 0 0.5em
+/* Aside Layout */
+
+aside
+  +panel
   margin: 1em 0 0 0.5em
-aside
-  border-radius: 0.25em
-  background: #FAFAFA
-  border: 1px solid #F8F8F8
-aside
-  float: left
-  width: 30%
-main
-  padding: 0 0 0 0
-  margin: 0 0.5em 0 0
+  padding: 0 1em 0 1em
+
+/* Main Layout */
+
+// index.html
+
+main ul.article-list
   +display-flex(flex)
   +flex-wrap(wrap)
 
-  article
-    +flex(0 0 33.333%)
-    .card
-      margin: 1em 0 0 1em
-      padding:  1em 0 0 -1em
-      display: block
-      border-radius: 0.25em
-      background: #FAFAFA
-      border: 1px solid #F8F8F8
-    img
-      display: block
-      margin: 0 auto
-      width: 10em
+  li
+    +flex(0 0 33%)
+
+  li > article a.card
+    +panel
+    margin: 1em 0 0 1em
+    padding:  1em 0 0 -1em
+    display: block
+
+// show.html
+
+article div.card
+  +panel
+
+
+
+
+img
+  display: block
+  margin: 0 auto
+  width: 10em

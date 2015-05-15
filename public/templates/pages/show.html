@@ -1,10 +1,12 @@
 <article>
-	<img class="article-image img-responsive" ng-src='{{article.url}}' alt='{{article.name}}'>
-	<div class="article-content">
-		<h1 class="article-name">{{article.name}}</h1>
-		<h3 class="article-price">{{article.price}}</h3>
-		<div class="article-tags">
-			<a class="badge" ng-repeat="tag in article.tags" ng-href="#/tags/{{tag}}"> {{ tag }} </a>
+	<div class="card">
+		<img ng-src='{{article.url}}' alt='{{article.name}}'>
+		<div class="article-content">
+			<h1 class="article-name">{{article.name}}</h1>
+			<h3 class="article-price">{{article.price}}</h3>
+			<div class="article-tags">
+				<a class="badge" ng-repeat="tag in article.tags" ng-href="#/tags/{{tag}}"> {{ tag }} </a>
+			</div>
 		</div>
 	</div>
 </article>

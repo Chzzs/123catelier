@@ -1,5 +1,9 @@
-<article  ng-repeat="article in articles">
-  <a class="card" ng-href='#/articles/{{article.id}}'>
-  	<img ng-src='{{article.url}}' alt='{{article.name}}'>
-  </a>
-</article>
+<ul class="article-list">
+  <li ng-repeat="article in articles">
+    <article>
+      <a class="card" ng-href='#/articles/{{article.id}}'>
+      	<img ng-src='{{article.url}}' alt='{{article.name}}'>
+      </a>
+    </article>
+  </li>
+</ul>
