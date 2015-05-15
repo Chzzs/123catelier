@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -65,28 +66,28 @@ html {
   font-size: 100%;
   line-height: 1.5em; }
 
-p, li, label, input {
+p, li, label, input, dl, dt {
   font-family: "Roboto"; }
 
 p {
   padding-top: 1.5em; }
-  p:last-of-type {
+  p:last-child {
     padding-bottom: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bitter-Bold"; }
 
 h1 {
-  font-size: 40px;
-  font-size: 2.5em;
-  line-height: 1.2em;
-  padding-top: 0.6em; }
-
-h2 {
   font-size: 32px;
   font-size: 2em;
   line-height: 1.5em;
   padding-top: 0.75em; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding-top: 1em; }
 
 /*  Page Flex Layout */
 body {
@@ -195,7 +196,48 @@ article div.card {
   border: 1px solid #F8F8F8;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
-  border-radius: 0.25em; }
+  border-radius: 0.25em;
+  margin: 1em 0.5em 0 1em;
+  padding: 0 1em 0 1em;
+  overflow: auto; }
+  article div.card h2 {
+    text-align: center; }
+
+dl {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 1em 0; }
+  dl dt {
+    padding: 0 1em 0 1em;
+    text-align: right;
+    -webkit-flex: 0 0 25%;
+    flex: 0 0 25%; }
+  dl dd {
+    padding: 0 1em 0 1em;
+    text-align: left;
+    -webkit-flex: 0 0 75%;
+    flex: 0 0 75%; }
+
+.show {
+  float: left; }
+
+h2:before {
+  content: "“"; }
+
+h2:after {
+  content: "”"; }
+
+.price:after {
+  content: "€"; }
+
+/* Footer Layout */
+footer {
+  margin: 1em 0 0 0;
+  text-align: center;
+  background: #424242;
+  color: #828282; }
 
 img {
   display: block;

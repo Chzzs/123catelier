@@ -28,24 +28,26 @@ $font-size: 16px
 
 +establish-baseline($font-size)
 
-p, li, label, input
+p, li, label, input, dl, dt
   font-family: "Roboto"
 p
   +padding-leader(1, $font-size)
-  &:last-of-type
+  &:last-child
     +padding-trailer(1, $font-size)
 
 h1, h2, h3, h4, h5, h6
   font-family: "Bitter-Bold"
 h1
-  font-size: $font-size * 2.5
-  +adjust-font-size-to($font-size * 2.5)
-  +padding-leader(1, $font-size * 2.5)
-
-h2
   font-size: $font-size * 2
   +adjust-font-size-to($font-size * 2)
   +padding-leader(1, $font-size * 2)
+
+h2
+  font-size: $font-size * 1.5
+  +adjust-font-size-to($font-size * 1.5)
+  +padding-leader(1, $font-size * 1.5)
+
+
 
 /*  Page Flex Layout */
 
@@ -132,8 +134,40 @@ main ul.article-list
 
 article div.card
   +panel
+  margin: 1em 0.5em 0 1em
+  padding: 0 1em 0 1em
+  overflow: auto
 
+  h2
+    text-align: center
+dl
+  +display-flex(flex)
+  +flex-wrap(wrap)
+  margin: 0 0 1em 0
+  dt
+    padding: 0 1em 0 1em
+    text-align: right
+    +flex(0 0 25%)
+  dd
+    padding: 0 1em 0 1em
+    text-align: left
+    +flex(0 0 75%)
+.show
+  float: left
 
+h2:before
+  content: "\201C"
+h2:after
+  content: "\201D"
+.price:after
+  content: "€"
+/* Footer Layout */
+
+footer
+  margin: 1em 0 0 0
+  text-align: center
+  background: #424242
+  color: #828282
 
 
 img
