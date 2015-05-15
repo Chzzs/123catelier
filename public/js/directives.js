@@ -1,4 +1,4 @@
-/* global angular: true */
+/* global angular: true, console: true*/
 
 angular.module('123catelier').directive('catCard', function() {
 	return {
@@ -9,5 +9,13 @@ angular.module('123catelier').directive('catCard', function() {
 			id: '=',
 			url: '='
 		}
+	};
+});
+
+angular.module('123catelier').directive('showReturn', function showReturnDirective() {
+	return {
+			link: function() {
+					console.log("toggle");
+			}
 	};
 });

@@ -1,4 +1,4 @@
-<html ng-app="123catelier">
+<html ng-app="123catelier" ng-controlller="MainController">
   <head>
     <title>123Catelier</title>
     <meta charset="UTF-8">
@@ -24,6 +24,7 @@
     </header>
 
     <nav>
+      <a id="return" href="#/articles">Retour au Catalogue...</a>
       <form class="search" action="#">
         <input type="text" name="search" placeholder="Que recherchez-vous ?">
         <input type="submit">
@@ -31,11 +32,13 @@
     </nav>
 
     <aside>
-      <h1>Contact</h1>
-      <p>Catherine Pérez-Sohier, porteuse de projet dans le cadre d'une coopérative d'activités et d'emploi, SCOP 276, coopérative engagée dans l'économie sociale et solidaire.</p>
-      <p>1, 2, 3... Catelier est mon atelier de création originale de bijoux. Mon atelier se situe à Bois-Guillaume.</p>
-      <p>Je réalise toutes les pièces: montage, assemblage, à partir d'éléments et matière première divers (bois, perles du monde, plumes, verre, céramique, etc...). </p>
-      <p>Je propose une assez large gamme de produits afin de satisfaire divers budgets et préférences.</p>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>Catherine Pérez-Sohier, porteuse de projet dans le cadre d'une coopérative d'activités et d'emploi, SCOP 276, coopérative engagée dans l'économie sociale et solidaire.</p>
+        <p>1, 2, 3... Catelier est mon atelier de création originale de bijoux. Mon atelier se situe à Bois-Guillaume.</p>
+        <p>Je réalise toutes les pièces: montage, assemblage, à partir d'éléments et matière première divers (bois, perles du monde, plumes, verre, céramique, etc...). </p>
+        <p>Je propose une assez large gamme de produits afin de satisfaire divers budgets et préférences.</p>
+      </div>
     </aside>
 
     <main ng-view>
