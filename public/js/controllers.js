@@ -1,10 +1,9 @@
-/* global angular:true */
+/* global angular: true */
 
-angular.module('123catelier').controller('IndexController', ['$scope', '$http', function($scope, $http) {
-	$http({method: 'GET', url: '/articles'}).success(function (data) {
+angular.module('123catelier').controller('IndexController', ['$scope', 'Article', function($scope, Article) {
+	Article.all().success(function (data) {
 		$scope.articles = data;
 		$("#return").removeClass("show").addClass("hide");
-
 	});
 }]);
 

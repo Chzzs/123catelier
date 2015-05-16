@@ -253,6 +253,8 @@ article div.card {
   margin: 1em 0.5em 0 1em;
   padding: 0 1em 0 1em;
   overflow: auto; }
+  article div.card img {
+    margin: 1em 0; }
   @media screen and (max-width: 1000px) {
     article div.card {
       margin: 1em 0.5em 0 0.5em; } }
