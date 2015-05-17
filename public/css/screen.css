@@ -166,8 +166,8 @@ nav #return:hover {
   border-radius: 0.25em;
   color: white;
   text-decoration: none; }
-nav .search {
-  text-align: right; }
+nav #search {
+  float: right; }
 nav input[type=text] {
   background: rgba(250, 250, 250, 0.33);
   border: 1px solid none;

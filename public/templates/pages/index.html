@@ -1,5 +1,5 @@
 <ul class="article-list">
-  <li ng-repeat="article in articles">
+  <li ng-repeat="article in articles | filter : search">
     <article>
       <a class="card" ng-href='#/articles/{{article.id}}'>
       	<img ng-src='{{article.url}}' alt='{{article.name}}'>
