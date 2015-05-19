@@ -1,67 +1,83 @@
  db.articles.insert({
     "id": 1,
     "name": "Bague carrée et argent martelé",
-    "url": "images/1.png"
+    "url": "images/1.png",
+    "price": 14
   });  db.articles.insert({
     "id": 2,
     "name": "Bague ronde et brillant jaune",
-    "url": "images/2.png"
+    "url": "images/2.png",
+    "price": 14
   });  db.articles.insert({
     "id": 3,
     "name": "Bague ronde et Liberty Africa",
-    "url": "images/3.png"
+    "url": "images/3.png",
+    "price": 14
   }); db.articles.insert({
     "id": 4,
     "name": "Bague carrée et triangle Liberty Africa",
-    "url": "images/4.png"
+    "url": "images/4.png",
+    "price": 14
   }); db.articles.insert({
     "id": 5,
-    "name": "Bague ronde rose et bois collé",
-    "url": "images/5.png"
+    "name": "Bague ronde en bois de Rose et bois collé",
+    "url": "images/5.png",
+    "price": 14
   }); db.articles.insert({
     "id": 6,
     "name": "Bague ronde et Liberty avec bouton gris",
-    "url": "images/6.png"
+    "url": "images/6.png",
+    "price": 14
   }); db.articles.insert({
     "id": 7,
     "name": "Bague ronde gravé et brillant bleu",
-    "url": "images/7.png"
+    "url": "images/7.png",
+    "price": 14
   }); db.articles.insert({
     "id": 8,
     "name": "Bague ronde et broderie fleur bleue",
-    "url": "images/8.png"
+    "url": "images/8.png",
+    "price": 14
   }); db.articles.insert({
     "id": 9,
     "name": "Bague ronde et Liberty géométrique",
-    "url": "images/9.png"
+    "url": "images/9.png",
+    "price": 14
   }); db.articles.insert({
     "id": 10,
     "name": "Bague carrée et fleur nacre",
-    "url": "images/10.png"
+    "url": "images/10.png",
+    "price": 14
   }); db.articles.insert({
     "id": 11,
     "name": "Bague ronde et Liberty avec bouton rouge",
-    "url": "images/11.png"
+    "url": "images/11.png",
+    "price": 14
   }); db.articles.insert({
     "id": 12,
     "name": "Bague ronde et Liberty avec émail fleur rose",
-    "url": "images/12.png"
+    "url": "images/12.png",
+    "price": 14
   }); db.articles.insert({
     "id": 13,
     "name": "Bague ronde et Liberty avec bouton",
-    "url" : "images/13.png"
+    "url" : "images/13.png",
+    "price": 14
   }); db.articles.insert({
     "id": 14,
     "name": "Bague ronde et pièce de métal argent",
-    "url": "images/14.png"
+    "url": "images/14.png",
+    "price": 14
   }); db.articles.insert({
     "id": 15,
     "name": "Bague ronde et carrée Briard vert",
-    "url": "images/15.png"
+    "url": "images/15.png",
+    "price": 14
   }); db.articles.insert({
     "id": 16,
     "name": "Bague ronde et losange nacré vert-jaune",
-    "url": "images/16.png"
+    "url": "images/16.png",
+    "price": 14
   }); db.articles.insert({
     "id": 17,
     "name": "Bracelet en cuir et Liberty avec 3 rangs coulissants",
