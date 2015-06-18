@@ -174,3 +174,27 @@
     "url": "images/35.png",
     "price": 20
   });
+  db.articles.insert({
+    "id": 36,
+    "name": "Boucles d'oreilles feuille filigrane noir et perle Tagua noir",
+    "url": "images/3822.png",
+    "price": 20
+  });
+  db.articles.insert({
+    "id": 37,
+    "name": "Boucles d'oreilles bois d'ébène, Liberty rouge et perle Tagua",
+    "url": "images/3825.png",
+    "price": 20
+  });
+  db.articles.insert({
+    "id": 38,
+    "name": "Boucles d'oreilles cristal de roche",
+    "url": "images/3828.png",
+    "price": 22
+  });
+  db.articles.insert({
+    "id": 39,
+    "name": "Boucles d'oreilles feuille filigrane noir chainettes et perles noir et orange",
+    "url": "images/3830.png",
+    "price": 20
+  });

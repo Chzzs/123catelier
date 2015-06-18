@@ -35,8 +35,11 @@ p
   &:last-child
     +padding-trailer(1, $font-size)
 
-h1, h2, h3, h4, h5, h6
+h1, h2
   font-family: "Bitter-Bold"
+
+h3, h4, h5, h6
+  font-family: "Bitter"
 h1
   font-size: $font-size * 2
   +adjust-font-size-to($font-size * 2)
@@ -47,7 +50,11 @@ h2
   +adjust-font-size-to($font-size * 1.5)
   +padding-leader(1, $font-size * 1.5)
 
-
+h3
+  font-size: $font-size * 1
+  +adjust-font-size-to($font-size * 1)
+  +padding-leader(1, $font-size * 1)
+  +padding-trailer(1, $font-size * 1)
 
 /*  Page Flex Layout */
 
@@ -111,9 +118,10 @@ nav
     +panel(rgba(#FAFAFA, 0.2), none)
     color: white
     text-decoration: none
-
-  #search
-    float: right
+  .search
+    text-align: right
+  #filter
+    display: inline-block
   input[type=text]
     @media screen and (max-width: 500px)
       display: block
@@ -129,9 +137,39 @@ nav
       color: rgba(#FFF, 0.5)
     &:focus
       outline: none
-  input[type=submit]
-    outline: none
-    display: none
+
+  #delete
+    display: inline-block
+    float: right
+    height: 2em
+    width: 2em
+    +panel(rgba(#FAFAFA, 0.33), none, 1em)
+    border: none
+    color: white
+    margin: 0 0 0 0.5em
+
+    span:before, span:after
+      position: absolute
+      content: ' '
+      display: inline-block
+      width: 1em
+      height: 0.2em
+      background: white
+    span:after
+
+      +transform( translateY(-50%) translateX(-50%) rotate(45deg))
+    span:before
+      +transform( translateY(-50%) translateX(-50%) rotate(-45deg))
+
+
+#alert
+  +panel(rgba(#FAFAFA, 0.33), none)
+  border: none
+  text-align: center
+  color: rgba(#FFF, 0.5)
+  margin: 1em 0.5em 0 0.5em
+  padding: 1em
+
 
 /* Aside Layout */
 
@@ -198,6 +236,24 @@ dl
     float: none
     display: block
     margin: 0 auto
+
+.mail
+  @media screen and (max-width: 1000px)
+    margin: 0 0 1em 0
+  @media screen and (max-width: 500px)
+    display: block
+    margin: 0 0 1em 0
+    width: 100%
+  padding: 0 1em 0 1em
+  text-align: center
+  line-height: 2em
+  +panel(rgba(#FAFAFA, 0.33), none)
+  color: rgba(#333, 1)
+  margin: 1em 0 0 0
+  padding: 0 0.5em 0 0.5em
+
+
+
 
 h2:before
   content: "\201C"

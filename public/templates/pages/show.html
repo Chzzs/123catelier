@@ -1,18 +1,13 @@
 <article>
 	<div class="card">
-
 		<img class="show" ng-src='{{article.url}}' alt='{{article.name}}'>
 		<h2 class="name">{{article.name}}</h2>
-
 		<dl>
 			<dt>Prix:</dt>	<dd class="price">{{article.price}}</dd>
 			<dt>Ajouté le:</dt>	<dd class="date">15/05/2015</dd>
-			<dt>Étiquettes:</dt>
-			<dd>
-				<ul class="tags">
-					<li ng-repeat="tag in article.tags" ><a class="badge" ng-href="#/tags/{{tag}}"> {{ tag }} </a></li>
-				</ul>
-			</dd>
 		</dl>
+		<p class="mail">Cet article vous intéresse ? <a href="mailto:ateliercreacat@gmail.com?Subject={{article.name}}" target="_top">Envoyez-moi un mail</a>
+
 	</div>
+</p>
 </article>

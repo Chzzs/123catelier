@@ -1,5 +1,6 @@
+
 <ul class="article-list">
-  <li ng-repeat="article in articles | filter : search">
+  <li ng-repeat="article in filtered = ( articles | filter : search )">
     <article>
       <a class="card" ng-href='#/articles/{{article.id}}'>
       	<img ng-src='{{article.url}}' alt='{{article.name}}'>
@@ -7,3 +8,9 @@
     </article>
   </li>
 </ul>
+
+
+<!-- Case Not Found -->
+<div id="alert" ng-show="!filtered.length">
+    <h3>Oups, il semblerait qu'il n'y ait pas d'articles correspondant à votre recherche...</h3>
+</div>

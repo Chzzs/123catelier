@@ -74,8 +74,11 @@ p {
   p:last-child {
     padding-bottom: 1.5em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Bitter-Bold"; }
+
+h3, h4, h5, h6 {
+  font-family: "Bitter"; }
 
 h1 {
   font-size: 32px;
@@ -88,6 +91,13 @@ h2 {
   font-size: 1.5em;
   line-height: 2em;
   padding-top: 1em; }
+
+h3 {
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
 
 /*  Page Flex Layout */
 body {
@@ -166,8 +176,10 @@ nav #return:hover {
   border-radius: 0.25em;
   color: white;
   text-decoration: none; }
-nav #search {
-  float: right; }
+nav .search {
+  text-align: right; }
+nav #filter {
+  display: inline-block; }
 nav input[type=text] {
   background: rgba(250, 250, 250, 0.33);
   border: 1px solid none;
@@ -197,9 +209,48 @@ nav input[type=text] {
     color: rgba(255, 255, 255, 0.5); }
   nav input[type=text]:focus {
     outline: none; }
-nav input[type=submit] {
-  outline: none;
-  display: none; }
+nav #delete {
+  display: inline-block;
+  float: right;
+  height: 2em;
+  width: 2em;
+  background: rgba(250, 250, 250, 0.33);
+  border: 1px solid none;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  margin: 0 0 0 0.5em; }
+  nav #delete span:before, nav #delete span:after {
+    position: absolute;
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    height: 0.2em;
+    background: white; }
+  nav #delete span:after {
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    transform: translateY(-50%) translateX(-50%) rotate(45deg); }
+  nav #delete span:before {
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg); }
+
+#alert {
+  background: rgba(250, 250, 250, 0.33);
+  border: 1px solid none;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  border: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 1em 0.5em 0 0.5em;
+  padding: 1em; }
 
 /* Aside Layout */
 aside #contact {
@@ -285,6 +336,27 @@ dl {
       float: none;
       display: block;
       margin: 0 auto; } }
+
+.mail {
+  padding: 0 1em 0 1em;
+  text-align: center;
+  line-height: 2em;
+  background: rgba(250, 250, 250, 0.33);
+  border: 1px solid none;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  color: #333333;
+  margin: 1em 0 0 0;
+  padding: 0 0.5em 0 0.5em; }
+  @media screen and (max-width: 1000px) {
+    .mail {
+      margin: 0 0 1em 0; } }
+  @media screen and (max-width: 500px) {
+    .mail {
+      display: block;
+      margin: 0 0 1em 0;
+      width: 100%; } }
 
 h2:before {
   content: "“"; }

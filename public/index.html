@@ -27,7 +27,12 @@
 
     <nav>
       <a id="return" href="#/articles">Retour au Catalogue...</a>
-      <input id="search" type="text" name="search" placeholder="Que recherchez-vous ?" ng-model="search">
+      <div id="search">
+        <input id="filter" type="text" name="filter" placeholder="Que recherchez-vous ?" ng-model="search">
+        <button id="delete">
+          <span></span>
+        </button>
+      </div>
     </nav>
 
     <aside>
@@ -46,5 +51,12 @@
     <footer>
       <p>Ce site a été developpé avec plein de technologies trop bien tel que <a href="#">Angular</a>, <a href="#">Node</a> et <a href="#">Express</a> et aussi avec beaucoup d'amour.</p>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $("#delete").click( function () {
+          $("#filter").val('');
+        });
+    });
+    </script>
   </body>
 </html>
